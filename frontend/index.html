@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>course system</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.29/sweetalert2.min.css">
+  </head>
+  <body>
+     <div class="container w-50 m-auto my-5">
+            <h1>Course System</h1>
+            <div class="mb-3">
+             
+            <label for="exampleInputEmail1" class="form-label">Course Name  <span class="text-danger">*</span></label>
+            <input id="courseName" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+            <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Course Category</label>
+            <input id="courseCat" type="text" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Course Price</label>
+                <input  id="coursePrice" type="number" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Course Description</label>
+                <textarea id="courseDesc" class="form-control" id="exampleInputPassword1"></textarea>
+            </div>
+        
+            <button   type="button" id="click"  class="btn btn-outline-secandrey">Add Course</button>
+            <button   type="button" onclick="update()" id="update"  class="btn btn-outline-secandrey">update</button>
+            <button type="clear" class="btn btn-outline-secandrey " id="clearbtn">Clear</button>
+
+            <div class="d-block mt-5 mb-3">
+              <button type="button" id="deleteBtn" class="btn btn-outline-danger">delete all</button>
+            </div>
+
+            <input type="search" id="search" placeholder="write any name " class="w-100 border "/>
+        <table class="table table-striped table-bordered border-dark mt-5">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Category</th>
+                <th scope="col">Price</th>
+                <th scope="col">Description</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody id="data">
+           
+            </tbody>
+          </table>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.29/sweetalert2.all.min.js" integrity="sha512-cgolxBUBvc5yorfBxXYQCvGEaTbZDdRMDjGrMw8h4G01gm/BfHlN8CO3amP68GbNbw8LY5uj/CFW4qpY9lHyPQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.29/sweetalert2.min.js" integrity="sha512-gCB2+0sWe4La5U90EqaPP2t58EczKkQE9UoCpnkG2EDSOOihgX/6MiT3MC4jYVEX03pv6Ydk1xybLG/AtN+3KQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>

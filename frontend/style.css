@@ -1,0 +1,11 @@
+#nameAlert{
+    display: none;
+}
+
+#click{
+visibility: visible;
+}
+
+#update{
+    visibility:hidden ;
+}
